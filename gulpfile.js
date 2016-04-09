@@ -5,6 +5,8 @@ var gulp = require('gulp'),
     browserify = require('gulp-browserify'),
     compass = require('gulp-compass'),
     connect = require('gulp-connect'),
+    gulpIf = require('gulp-if'),
+    uglify = require('gulp-uglify'),
     conu = require('gulp-concat-util');
 
 var   env, jsSources, sassSources, htmlSources,       
@@ -12,7 +14,7 @@ var   env, jsSources, sassSources, htmlSources,
     outputDir,
     sassStyle;
     
-    env = process.env.NODE_ENV || 'develpment';
+    env = process.env.NODE_ENV || 'production';
 
     if (env==='development') {
           outputDir = 'builds/development/';
@@ -52,6 +54,7 @@ gulp.task('js', function() {
    gulp.src(jsSources)
     .pipe(concat('script.js'))
      .pipe(browserify())
+      .pipe(gulpIf(env === 'production', uglify()))
         .pipe(gulp.dest(outputDir + 'js'))
             .pipe(connect.reload())
 });
