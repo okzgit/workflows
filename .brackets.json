@@ -1,6 +1,7 @@
 {
     "jscodehints.detectedExclusions": [
         "C:/Users/Ouria/Desktop/workflows/docs/substack_node-browserify_ browser-side require() the node.js way_files/github-b3a841f8cc32816b31ff5c45c945e9eab12fc24e8af13917215e68dc3f99dc55.js",
-        "C:/Users/Ouria/Desktop/workflows/docs/substack_browserify-handbook_ how to build modular applications with browserify_files/hotkey.js"
+        "C:/Users/Ouria/Desktop/workflows/docs/substack_browserify-handbook_ how to build modular applications with browserify_files/hotkey.js",
+        "C:/Users/Ouria/Desktop/workflows/docs/substack_node-browserify_ browser-side require() the node.js way_files/frameworks-f58ca34af7043eba041d9eb522d0869db1a8bac228d788e9c1be651a83ad6c33.js"
     ]
 }
