@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://www.npmjs.com/package/gulp-util -->
+<html lang="en" prefix="og: http://ogp.me/ns#" class=" js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.autocomplete-container {  overflow: visible;}.autocomplete-suggestions {  border: 1px solid #999;  background: #FFF;  overflow-x: hidden;  overflow-y: auto;  cursor: default;}.autocomplete-suggestion {  padding: 2px 5px;  white-space: nowrap;  overflow: hidden;}.autocomplete-selected {  background: #F0F0F0;}.autocomplete-container strong {  font-weight: bold;}#powered-by-constructor-io {  font-size: 0.8em;  text-align:right;  background-color:rgb(255,255,192);  font-family:sans-serif;  padding: 4px 10px;  position: absolute;  border: 1px solid #999;}#constructorio-backing-node {  background-color:rgb(255,255,255);  padding: 4px 10px;  position: absolute;  border: 1px solid #FFF;}.autocomplete-suggestion-image {  float:left;  padding-right: 10px;}#autocomplete-direct-results:before {  content:'Products'}#autocomplete-search-container:before {  content:'Search Suggestions'}.autocomplete-suggestion-description {  font-size: 0.8em;  display: block;  margin-left: 10px;  line-height: 1.0em;}</style>
+  
+  <script type="text/javascript" src="./gulp-util_files/ba86f45fc4"></script><script src="./gulp-util_files/nr-918.min.js"></script><script async="" src="./gulp-util_files/analytics.js"></script><script nonce="b8de7df200785323f07c955fb9f8b1609f2e2cbe0f0d8d074d77ee37209bf6d15991c39dcc2846d34d58eab6dbe9042e688ea303946b0fcddb77d4d09e84e0e0" type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"ba86f45fc4","applicationID":"9556514","applicationTime":1790.970071,"transactionName":"M1BXZxFZVkQFURBdVwoafVITURdwIWZLG0gFVl5SBF0XTBRTB19ZA1BI","queueTime":0,"ttGuid":"3e146d2910f27a","agentToken":null}; window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+  <title>gulp-util</title>
+
+    <meta name="description" content="Utility functions for gulp plugins">
+    <meta property="og:description" content="Utility functions for gulp plugins">
+    <meta property="og:title" content="gulp-util">
+    <meta property="og:url" content="https://www.npmjs.com/package/gulp-util">
+    <meta property="og:site_name" content="npm">
+    <meta name="keywords" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://www.npmjs.com/package/gulp-util">
+    <meta name="twitter:title" content="npm: gulp-util">
+    <meta name="twitter:description" content="Utility functions for gulp plugins">
+  
+  
+  <meta http-equiv="cleartype" content="on">
+  
+  <meta name="apple-mobile-web-app-capable" content="no">
+  
+  
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+  
+  <meta name="x-npm:ga:id" content="UA-47041310-1">
+  <meta name="x-npm:ga:dimensions" content="{&quot;aboveChrome&quot;:&quot;dimension1&quot;,&quot;belowHeader&quot;:&quot;dimension3&quot;,&quot;packagePage&quot;:&quot;dimension2&quot;}">
+  
+  <link rel="canonical" href="https://www.npmjs.com/package/gulp-util">
+  <link rel="search" type="application/opensearchdescription+xml" href="https://www.npmjs.com/opensearch.xml" title="npm">
+
+    <link rel="stylesheet" media="all" href="./gulp-util_files/index.0854e9c6.css">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="./gulp-util_files/css">
+  
+    <script src="./gulp-util_files/index.min.bc5853f2.js"></script>
+    <style>
+      .marketing {
+  margin: 0px;
+  margin-left: -10px;
+  margin-bottom: 40px;
+  padding: 0px 0px;
+  font-size: 15px;
+  font-style: normal;
+  fond-variant: normal;
+  fort-weight: normal;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  line-height: 22.5px;
+  }
+  
+  .marketing a {
+  font-weight: 400;
+  text-decoration: none;
+  color: #cb3837;
+  }
+  
+  .marketing h3 {
+  display: block;
+  margin: 0;
+  padding: 20px 0 10px 0;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .marketing h3 a {
+  color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .marketing h3 a:hover {
+  color: #cb3837;
+  }
+  
+  .marketing p {
+  line-height: 22.5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+  
+  .marketing p a {
+  white-space: nowrap;
+  }
+  
+  #marketing-texthed {
+  margin-left: 10px;
+  }
+    </style>
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://www.npmjs.com/static/images/touch-icons/manifest.json">
+  <link rel="shortcut icon" href="https://www.npmjs.com/static/images/touch-icons/favicon.ico">
+  <link rel="yandex-tableau-widget" href="https://www.npmjs.com/static/images/touch-icons/yandex-browser-manifest.json">
+  <meta property="og:image" content="https://www.npmjs.com/static/images/touch-icons/open-graph.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileColor" content="#cb3837">
+  <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+  <meta name="theme-color" content="#cb3837">
+
+<style>.autocomplete-container, .autocomplete-suggestions, #powered-by-constructor-io { width: 1110px !important }</style><style id="iconic-responsive-css" type="text/css">/* Iconic Responsive Support Styles */
+.iconic-property-fill, .iconic-property-text {stroke: none !important;}
+.iconic-property-stroke {fill: none !important;}
+svg.iconic.iconic-fluid {height:100% !important;width:100% !important;}
+svg.iconic.iconic-sm:not(.iconic-size-md):not(.iconic-size-lg), svg.iconic.iconic-size-sm{width:16px;height:16px;}
+svg.iconic.iconic-md:not(.iconic-size-sm):not(.iconic-size-lg), svg.iconic.iconic-size-md{width:32px;height:32px;}
+svg.iconic.iconic-lg:not(.iconic-size-sm):not(.iconic-size-md), svg.iconic.iconic-size-lg{width:128px;height:128px;}
+svg.iconic-sm > g.iconic-md, svg.iconic-sm > g.iconic-lg, svg.iconic-md > g.iconic-sm, svg.iconic-md > g.iconic-lg, svg.iconic-lg > g.iconic-sm, svg.iconic-lg > g.iconic-md {display: none;}
+svg.iconic.iconic-icon-sm > g.iconic-lg, svg.iconic.iconic-icon-md > g.iconic-lg {display:none;}
+svg.iconic-sm:not(.iconic-icon-md):not(.iconic-icon-lg) > g.iconic-sm, svg.iconic-md.iconic-icon-sm > g.iconic-sm, svg.iconic-lg.iconic-icon-sm > g.iconic-sm {display:inline;}
+svg.iconic-md:not(.iconic-icon-sm):not(.iconic-icon-lg) > g.iconic-md, svg.iconic-sm.iconic-icon-md > g.iconic-md, svg.iconic-lg.iconic-icon-md > g.iconic-md {display:inline;}
+svg.iconic-lg:not(.iconic-icon-sm):not(.iconic-icon-md) > g.iconic-lg, svg.iconic-sm.iconic-icon-lg > g.iconic-lg, svg.iconic-md.iconic-icon-lg > g.iconic-lg {display:inline;}</style><script id="objHTMLFormElementPrototype">try{   document.objHTMLFormElementPrototype = new Object();   document.objHTMLFormElementPrototype.submit = HTMLFormElement.prototype.submit;   HTMLFormElement.prototype.submit = function(AEvent)   {      var spEvent = document.createEvent('Event');      spEvent.initEvent('sp_submit', true, true);      this.dispatchEvent(spEvent);      document.objHTMLFormElementPrototype.submit.apply(this);   };}catch(e){  alert('Error during attach to HTMLFormElement.prototype.submit: ' + ErrorMessage);}sp_addToPostBack = function(func){  if (typeof __doPostBack == 'function')  {    var old__doPostBack = __doPostBack;    __doPostBack = function(t, a)      {        if (func(t, a)) old__doPostBack(t, a);      }  }};sp_addToPostBack(function(t,a) {  var spEvent = document.createEvent('Event');  spEvent.initEvent('sp_submit', true, true);  this.dispatchEvent(spEvent);  return true;});</script></head>
+
+<body itemscope="" itemtype="http://schema.org/WebSite" data-crumb="nSCYGPvTe0kpL_D5ckbIE9wlfDaUyW7TRwWHefsICcB" spisdocumentcomplete="666" spsourceindexset="666">
+  <meta itemprop="url" content="https://www.npmjs.com/">
+
+
+  <header class="anonymous ">
+    <!-- logo -->
+    <div class="header-item brand-container">
+      <div class="logo-container" id="npm-logo">
+        <a href="https://www.npmjs.com/"><img src="./gulp-util_files/npm-logo.svg" alt="npm logo"></a>
+      </div>
+    </div>
+    <!-- /logo -->
+  
+    <!-- search -->
+    <div class="header-item header-search-container">
+      <form class="site-search" id="npm-search" action="https://www.npmjs.com/search" method="get" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction" sourceindex="0">
+        <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+        <div id="site-search-container">
+            <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" autocomplete="off">
+        </div>
+        <input type="submit" sourceindex="1">
+      </form>
+    </div>
+  
+  
+    <!-- menu 1 -->
+    <div class="header-item user-info-container">
+      <div class="user-info">
+          <ul class="user-info-salutation single">
+            <li><a href="https://www.npmjs.com/signup">sign up</a> or <a href="https://www.npmjs.com/login">log in</a></li>
+            <li><a href="https://www.npmjs.com/login"><span class="a11y-only">log in</span><span class="icon icon-wombat-head-login"></span></a></li>
+          </ul>
+      </div> <!-- .user-info -->
+    </div>
+    <!-- /menu 1 -->
+  
+    <!-- menu 2 -->
+    <div class="header-item header-nav-menu-container">
+      <a href="https://www.npmjs.com/package/gulp-util#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">Nestable Processes Mutate</a>
+  
+      <div class="nav-menu-container" role="navigation">
+        <a class="nav-toggle drop-down-menu-toggle" href="https://www.npmjs.com/package/gulp-util#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+          <img alt="mobile navigation menu" src="./gulp-util_files/mobile-menu.png">
+        </a>
+  
+  
+        <div class="drop-down-menu-container" role="menu">
+          <nav id="product-navigation" class="product-navigation drop-down-menu">
+            <ul class="drop-down-menu-section products-list">
+              <li><a href="https://www.npmjs.com/npm/on-site">npm On-Site</a></li>
+              <li><a href="https://www.npmjs.com/npm/private-packages" data-event-trigger="click" data-event-name="private-modules-nav-link">npm Private Packages</a></li>
+              <li><a href="https://www.npmjs.com/npm/open-source">npm Open Source</a></li>
+              <li><a href="https://docs.npmjs.com/">documentation</a></li>
+              <li><a href="https://www.npmjs.com/support">support</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- /menu 2 -->
+  
+  
+  
+  </header>
+
+
+    <div class="container content">
+      
+<div class="content-column">
+
+  <h1 class="package-name">
+    <a href="https://www.npmjs.com/package/gulp-util" class="active">gulp-util</a>
+      <i class="icon-public"></i>
+  </h1>
+  <p class="package-description">Utility functions for gulp plugins</p>
+
+  <form class="star" sourceindex="2">
+    <input type="hidden" name="name" value="gulp-util">
+    <input id="star-input" type="checkbox" name="isStarred" value="true" sourceindex="3">
+    <label for="star-input" class="icon-star"></label>
+      <input type="hidden" name="crumb" value="nSCYGPvTe0kpL_D5ckbIE9wlfDaUyW7TRwWHefsICcB">
+  </form>
+
+  <div id="readme" class="markdown">
+      <h1 class="package-name-redundant">gulp-util <a href="https://www.npmjs.com/package/gulp-util"><img src="./gulp-util_files/gulp-util.svg" class="badge"></a> <a href="https://travis-ci.org/gulpjs/gulp-util"><img src="./gulp-util_files/gulp-util(1).svg" class="badge"></a> <a href="https://coveralls.io/r/gulpjs/gulp-util"><img src="./gulp-util_files/gulp-util(2).svg" class="badge"></a> <a href="https://david-dm.org/gulpjs/gulp-util"><img src="./gulp-util_files/gulp-util(3).svg" class="badge"></a></h1>
+<h2 id="user-content-information" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#information">Information</a></h2>
+<table>
+<tbody><tr> 
+<td>Package</td><td>gulp-util</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Utility functions for gulp plugins</td>
+</tr>
+<tr>
+<td>Node Version</td>
+<td>&gt;= 0.10</td>
+</tr>
+</tbody></table>
+<h2 id="user-content-usage" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#usage">Usage</a></h2>
+<pre><code class="highlight javascript"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;gutil&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="support function js"><span>require</span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>gulp-util</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span>gutil</span><span class="support function js firebug"><span>.log</span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>stuff&nbsp;happened</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>Really&nbsp;it&nbsp;did</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;gutil</span><span class="meta delimiter method period js"><span>.</span></span><span>colors</span><span class="meta delimiter method period js"><span>.</span></span><span>magenta</span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>123</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>gutil</span><span class="meta delimiter method period js"><span>.</span></span><span>beep</span><span class="meta brace round js"><span>(</span><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span>gutil</span><span class="meta delimiter method period js"><span>.</span></span><span>replaceExtension</span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>file.coffee</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>.js</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span><span>&nbsp;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&nbsp;file.js</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;opt&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;name</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>todd</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;file</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;someGulpFile</span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>gutil</span><span class="meta delimiter method period js"><span>.</span></span><span>template</span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>test&nbsp;&lt;%=&nbsp;name&nbsp;%&gt;&nbsp;&lt;%=&nbsp;file.path&nbsp;%&gt;</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;opt</span><span class="meta brace round js"><span>)</span></span><span>&nbsp;</span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&nbsp;test&nbsp;todd&nbsp;/js/hi.js</span><span>&nbsp;</span></span></span></div></pre></code></pre>
+<h3 id="user-content-logmsg" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#logmsg">log(msg...)</a></h3>
+<p>Logs stuff. Already prefixed with [gulp] and all that. If you pass in multiple arguments it will join them by a space.</p>
+<p>The default gulp coloring using gutil.colors.:</p>
+<pre><code><pre class="editor editor-colors"><div class="line"><span class="text"><span>values&nbsp;(files,&nbsp;module&nbsp;names,&nbsp;etc.)&nbsp;=&nbsp;cyan</span></span></div><div class="line"><span class="text"><span>numbers&nbsp;(times,&nbsp;counts,&nbsp;etc)&nbsp;=&nbsp;magenta</span></span></div></pre></code></pre>
+<h3 id="user-content-colors" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#colors">colors</a></h3>
+<p>Is an instance of <a href="https://github.com/sindresorhus/chalk">chalk</a>.</p>
+<h3 id="user-content-replaceextensionpath-newextension" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#replaceextensionpath-newextension">replaceExtension(path, newExtension)</a></h3>
+<p>Replaces a file extension in a path. Returns the new path.</p>
+<h3 id="user-content-isstreamobj" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#isstreamobj">isStream(obj)</a></h3>
+<p>Returns true or false if an object is a stream.</p>
+<h3 id="user-content-isbufferobj" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#isbufferobj">isBuffer(obj)</a></h3>
+<p>Returns true or false if an object is a Buffer.</p>
+<h3 id="user-content-templatestring-data" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#templatestring-data">template(string[, data])</a></h3>
+<p>This is a lodash.template function wrapper. You must pass in a valid gulp file object so it is available to the user or it will error. You can not configure any of the delimiters. Look at the <a href="http://lodash.com/docs#template">lodash docs</a> for more info.</p>
+<h2 id="user-content-new-fileobj" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#new-fileobj">new File(obj)</a></h2>
+<p>This is just <a href="https://github.com/wearefractal/vinyl">vinyl</a></p>
+<pre><code class="highlight javascript"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;file&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>gutil.File</span></span></span><span class="meta brace round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;base</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;path</span><span class="meta delimiter method period js"><span>.</span></span><span class="support function js"><span>join</span></span><span class="meta brace round js"><span>(</span></span><span class="support variable js"><span>__dirname</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>./fixtures/</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;cwd</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="support variable js"><span>__dirname</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;path</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;path</span><span class="meta delimiter method period js"><span>.</span></span><span class="support function js"><span>join</span></span><span class="meta brace round js"><span>(</span></span><span class="support variable js"><span>__dirname</span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>./fixtures/test.coffee</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre></code></pre>
+<h2 id="user-content-noop" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#noop">noop()</a></h2>
+<p>Returns a stream that does nothing but pass data straight through.</p>
+<pre><code class="highlight javascript"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&nbsp;gulp&nbsp;should&nbsp;be&nbsp;called&nbsp;like&nbsp;this&nbsp;:</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span>&nbsp;$&nbsp;gulp&nbsp;--type&nbsp;production</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>gulp</span><span class="meta delimiter method period js"><span>.</span></span><span>task</span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>scripts</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="meta function js"><span class="storage type function js"><span>function</span></span><span class="punctuation definition begin js"><span>(</span></span><span class="punctuation definition end js"><span>)</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;gulp</span><span class="meta delimiter method period js"><span>.</span></span><span class="support constant dom js"><span>src</span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>src/**/*.js</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta delimiter method period js"><span>.</span></span><span>pipe</span><span class="meta brace round js"><span>(</span></span><span class="support function js"><span>concat</span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>script.js</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span><span>)</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta delimiter method period js"><span>.</span></span><span>pipe</span><span class="meta brace round js"><span>(</span></span><span>gutil</span><span class="meta delimiter method period js"><span>.</span></span><span>env</span><span class="meta delimiter method period js"><span>.</span></span><span class="support constant dom js"><span>type</span></span><span>&nbsp;</span><span class="keyword operator js"><span>===</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>production</span><span class="punctuation definition string end js"><span>'</span></span></span><span>&nbsp;</span><span class="keyword operator js"><span>?</span></span><span>&nbsp;uglify</span><span class="meta brace round js"><span>(</span><span>)</span></span><span>&nbsp;</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;gutil</span><span class="meta delimiter method period js"><span>.</span></span><span>noop</span><span class="meta brace round js"><span>(</span><span>)</span><span>)</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta delimiter method period js"><span>.</span></span><span>pipe</span><span class="meta brace round js"><span>(</span></span><span>gulp</span><span class="meta delimiter method period js"><span>.</span></span><span>dest</span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>dist/</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre></code></pre>
+<h2 id="user-content-buffercb" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#buffercb">buffer(cb)</a></h2>
+<p>This is similar to es.wait but instead of buffering text into one string it buffers anything into an array (so very useful for file objects).</p>
+<p>Returns a stream that can be piped to.</p>
+<p>The stream will emit one data event after the stream piped to it has ended. The data will be the same array passed to the callback.</p>
+<p>Callback is optional and receives two arguments: error and data</p>
+<pre><code class="highlight javascript"><pre class="editor editor-colors"><div class="line"><span class="source js"><span>gulp</span><span class="meta delimiter method period js"><span>.</span></span><span class="support constant dom js"><span>src</span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>stuff/*.js</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta delimiter method period js"><span>.</span></span><span>pipe</span><span class="meta brace round js"><span>(</span></span><span>gutil</span><span class="meta delimiter method period js"><span>.</span></span><span>buffer</span><span class="meta brace round js"><span>(</span></span><span class="meta function js"><span class="storage type function js"><span>function</span></span><span class="punctuation definition begin js"><span>(</span></span><span class="variable function js"><span>err</span></span><span>,&nbsp;</span><span class="variable function js"><span>files</span></span><span class="punctuation definition end js"><span>)</span></span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre></code></pre>
+<h2 id="user-content-new-pluginerrorpluginname-message-options" class="deep-link"><a href="https://www.npmjs.com/package/gulp-util#new-pluginerrorpluginname-message-options">new PluginError(pluginName, message[, options])</a></h2>
+<ul>
+<li>pluginName should be the module name of your plugin</li>
+<li>message can be a string or an existing error</li>
+<li>By default the stack will not be shown. Set <code>options.showStack</code> to true if you think the stack is important for your error.</li>
+<li>If you pass an error in as the message the stack will be pulled from that, otherwise one will be created.</li>
+<li>Note that if you pass in a custom stack string you need to include the message along with that.</li>
+<li>Error properties will be included in <code>err.toString()</code>. Can be omitted by including <code>{showProperties: false}</code> in the options.</li>
+</ul>
+<p>These are all acceptable forms of instantiation:</p>
+<pre><code class="highlight javascript"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;err&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>gutil.PluginError</span></span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>test</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;message</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>something&nbsp;broke</span><span class="punctuation definition string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;err&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>gutil.PluginError</span></span></span><span class="meta brace round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;plugin</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>test</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;message</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>something&nbsp;broke</span><span class="punctuation definition string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;err&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>gutil.PluginError</span></span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>test</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>something&nbsp;broke</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;err&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>gutil.PluginError</span></span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>test</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>something&nbsp;broke</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>showStack</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;existingError&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>Error</span></span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>OMG</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span class="storage modifier js"><span>var</span></span><span>&nbsp;err&nbsp;</span><span class="keyword operator js"><span>=</span></span><span>&nbsp;</span><span class="meta class instance constructor"><span class="keyword operator js"><span>new</span></span><span>&nbsp;</span><span class="entity name type instance js"><span>gutil.PluginError</span></span></span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>test</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;existingError</span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>showStack</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre></code></pre>
+
+  </div>
+
+</div>
+
+<div class="sidebar">
+
+    <div class="promotion" data-promotion-id="517" data-promotion-spot="packagePage"><div class="marketing">
+<h3 id="marketing-texthed"><a href="http://npm.me/c1" title="npm v3 Dependency Resolution">npm3 dependency resolution</a></h3>
+
+<p>npm3 resolves dependencies differently than npm2. Here’s what you need to know.  <a href="http://npm.me/c1" title="npm v3 Dependency Resolution">Learn more…</a></p></div></div>
+
+    <div class="autoselect-wrapper npm-install icon-download">
+      <input type="text" value="npm install gulp-util" readonly="" sourceindex="4">
+      <p><a href="https://www.npmjs.com/package/gulp-util/tutorial">how? learn more</a></p>
+    </div>
+
+  <ul class="box">
+
+      <li class="last-publisher">
+          <a href="https://www.npmjs.com/~phated">
+            <img src="./gulp-util_files/ac1c67fd906c9fecd823ce302283b4c1" alt="phated">
+            <span>phated</span>
+          </a>
+          published
+          <span data-date="2015-10-20T03:11:15.750Z" data-date-format="relative">6 months ago</span>
+      </li>
+
+    <li>
+      <strong>3.0.7</strong>
+      is the latest
+        of 39 releases
+    </li>
+
+      <li>
+        <a href="https://github.com/gulpjs/gulp-util">github.com/gulpjs/gulp-util</a>
+      </li>
+
+
+      <li>
+          <a href="http://spdx.org/licenses/MIT">MIT</a>
+          <img class="osi" alt="Licensed on OSI-approved terms" src="./gulp-util_files/osi.svg">®
+      </li>
+
+  </ul>
+
+    <h3 title="collaborators">
+      <a href="https://www.npmjs.com/package/gulp-util/access">Collaborators</a>
+    </h3>
+
+    <ul class="humans collaborators">
+        <li>
+            <a href="https://www.npmjs.com/~fractal" rel="tipsy" original-title="fractal">
+                <img src="./gulp-util_files/d8d6380ff3ae99630da33f9bdeafefd3" alt="fractal">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.npmjs.com/~phated" rel="tipsy" original-title="phated">
+                <img src="./gulp-util_files/b6eacb578b910a8efe75e07a5741c018" alt="phated">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.npmjs.com/~contra" rel="tipsy" original-title="contra">
+                <img src="./gulp-util_files/9ec7d2fe8b65632339dd7f6f45f5a6e0" alt="contra">
+            </a>
+        </li>
+
+
+    </ul>
+
+    <h3>Stats</h3>
+    <ul class="box">
+
+        <li>
+          <strong class="pretty-number daily-downloads">141,184</strong>
+          downloads in the last day
+        </li>
+        <li>
+          <strong class="pretty-number weekly-downloads">802,829</strong>
+          downloads in the last week
+        </li>
+        <li>
+          <strong class="pretty-number monthly-downloads">3,365,951</strong>
+          downloads in the last month
+        </li>
+
+        <li id="issues" data-ghapi="https://api.github.com/repos/gulpjs/gulp-util">
+          <span class="original" style="display: none;">Have an issue? <a href="https://github.com/gulpjs/gulp-util/issues">5 open issues</a></span>
+            <span class="enhanced" style="">
+              <a href="https://github.com/gulpjs/gulp-util/issues">5 open issues</a> on GitHub
+            </span>
+        </li>
+
+        <li id="pull_requests" style="">
+          <a href="https://github.com/gulpjs/gulp-util/pulls">4 open pull requests</a> on GitHub
+        </li>
+
+    </ul>
+
+      <h3>Try it out</h3>
+      <ul class="box">
+        <li class="tonicdev"><a href="https://tonicdev.com/npm/gulp-util" target="_blank">Test gulp-util in your browser.</a></li>
+      </ul>
+
+  <h3>Keywords</h3>
+  <p class="list-of-links">
+      None
+  </p>
+
+  <h3>Dependencies (18)</h3>
+  <p class="list-of-links">
+          <a href="https://www.npmjs.com/package/vinyl">vinyl</a>,
+          <a href="https://www.npmjs.com/package/through2">through2</a>,
+          <a href="https://www.npmjs.com/package/replace-ext">replace-ext</a>,
+          <a href="https://www.npmjs.com/package/object-assign">object-assign</a>,
+          <a href="https://www.npmjs.com/package/multipipe">multipipe</a>,
+          <a href="https://www.npmjs.com/package/minimist">minimist</a>,
+          <a href="https://www.npmjs.com/package/lodash.template">lodash.template</a>,
+          <a href="https://www.npmjs.com/package/lodash._reinterpolate">lodash._reinterpolate</a>,
+          <a href="https://www.npmjs.com/package/lodash._reevaluate">lodash._reevaluate</a>,
+          <a href="https://www.npmjs.com/package/lodash._reescape">lodash._reescape</a>,
+          <a href="https://www.npmjs.com/package/has-gulplog">has-gulplog</a>,
+          <a href="https://www.npmjs.com/package/gulplog">gulplog</a>,
+          <a href="https://www.npmjs.com/package/fancy-log">fancy-log</a>,
+          <a href="https://www.npmjs.com/package/dateformat">dateformat</a>,
+          <a href="https://www.npmjs.com/package/chalk">chalk</a>,
+          <a href="https://www.npmjs.com/package/beeper">beeper</a>,
+          <a href="https://www.npmjs.com/package/array-uniq">array-uniq</a>,
+                <a href="https://www.npmjs.com/package/array-differ">array-differ</a>
+  </p>
+
+    <h3><a href="https://www.npmjs.com/browse/depended/gulp-util">Dependents</a></h3>
+    <p class="list-of-links dependents">
+
+          <a href="https://www.npmjs.com/package/gulp.spritesmith">gulp.spritesmith</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-xo">gulp-xo</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-newer">gulp-newer</a>,
+        
+          <a href="https://www.npmjs.com/package/ensemblejs">ensemblejs</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-library-umd">gulp-library-umd</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-sprite-generator">gulp-sprite-generator</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-jison-cli">gulp-jison-cli</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-blackcoffee">gulp-blackcoffee</a>,
+        
+          <a href="https://www.npmjs.com/package/rapid-build">rapid-build</a>,
+        
+          <a href="https://www.npmjs.com/package/hornet-js-builder">hornet-js-builder</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-jshint">gulp-jshint</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-concat">gulp-concat</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-coffee">gulp-coffee</a>,
+        
+          <a href="https://www.npmjs.com/package/pui-react-tools">pui-react-tools</a>,
+        
+          <a href="https://www.npmjs.com/package/lute">lute</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-less">gulp-less</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp">gulp</a>,
+        
+          <a href="https://www.npmjs.com/package/grommet-toolbox">grommet-toolbox</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-pipeline">gulp-pipeline</a>,
+        
+          <a href="https://www.npmjs.com/package/angular-bricks.js">angular-bricks.js</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-pug">gulp-pug</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-config-transform">gulp-config-transform</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-cache">gulp-cache</a>,
+        
+          <a href="https://www.npmjs.com/package/@thebespokepixel/xo-tidy">@thebespokepixel/xo-tidy</a>,
+        
+          <a href="https://www.npmjs.com/package/vitreum">vitreum</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-css-background-remove">gulp-css-background-remove</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-metal">gulp-metal</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-mocha">gulp-mocha</a>,
+        
+          <a href="https://www.npmjs.com/package/mango-gulp">mango-gulp</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-sass">gulp-sass</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-watchify">gulp-watchify</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-gcloud">gulp-gcloud</a>,
+        
+          <a href="https://www.npmjs.com/package/fear-core-serve">fear-core-serve</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-clean-css">gulp-clean-css</a>,
+        
+          <a href="https://www.npmjs.com/package/metal-tools-soy">metal-tools-soy</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-config-apsis">gulp-config-apsis</a>,
+        
+          <a href="https://www.npmjs.com/package/calendar-widget">calendar-widget</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-npm-check">gulp-npm-check</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-i18n-extract">gulp-i18n-extract</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-remember">gulp-remember</a>,
+        
+          <a href="https://www.npmjs.com/package/secret-elixir">secret-elixir</a>,
+        
+          <a href="https://www.npmjs.com/package/koa-react-isomorphic">koa-react-isomorphic</a>,
+        
+          <a href="https://www.npmjs.com/package/guanlecoja">guanlecoja</a>,
+        
+          <a href="https://www.npmjs.com/package/bifypack">bifypack</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-elasticbeanstalk-deploy">gulp-elasticbeanstalk-deploy</a>,
+        
+          <a href="https://www.npmjs.com/package/polygulp">polygulp</a>,
+        
+          <a href="https://www.npmjs.com/package/fear-core-dev">fear-core-dev</a>,
+        
+          <a href="https://www.npmjs.com/package/pentia-builder">pentia-builder</a>,
+        
+          <a href="https://www.npmjs.com/package/gulp-yandex-translate">gulp-yandex-translate</a>,
+                  <a href="https://www.npmjs.com/package/gulp-md5-plus">gulp-md5-plus</a>,
+        <a href="https://www.npmjs.com/browse/depended/gulp-util">and more</a>
+    </p>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "gulp-util",
+      "description": "Utility functions for gulp plugins",
+      "url": "https://www.npmjs.com/package/gulp-util",
+      "keywords": "",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+         "@type": "Offer",
+         "price": "0.00"
+      }
+    }
+  </script>
+
+    <div class="hiring-container" data-template="sidebar"><div class="ad">
+  <p>
+    <a href="https://www.ziprecruiter.com/jobs/diamond-36a21837/node-js-developer-898ac5ef" title="Diamond">Diamond</a> is hiring.
+    <a class="quiet" href="https://www.npmjs.com/whoshiring">View more…</a>
+  </p>
+</div></div>
+
+</div>
+
+
+    </div>
+
+  <footer class="pane bg-npm-navy-1">
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h3 class="h4 type-npm-pastel-3">You Need Help</h3>
+          <hr class="divider-1">
+          <ul class="list-unstyled h6 em-default">
+            <li class="pbl"><a class="type-neutral-11" href="https://docs.npmjs.com/">Documentation</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/support">Support / Contact Us</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="http://status.npmjs.org/">Registry Status</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://github.com/npm/newww/issues">Website Issues</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/security">Security</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-6 col-md-offset-1">
+          <h3 class="h4 type-npm-pastel-3">About npm</h3>
+          <hr class="divider-1">
+          <ul class="list-unstyled h6 em-default">
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/about">About npm, Inc</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/jobs">Jobs</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/npm-weekly">npm Weekly</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="http://blog.npmjs.org/">Blog</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://twitter.com/npmjs">Twitter</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://github.com/npm">GitHub</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-6 col-md-offset-1">
+          <h3 class="h4 type-npm-pastel-3">Legal Stuff</h3>
+          <hr class="divider-1">
+          <ul class="list-unstyled h6 em-default">
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/terms">Terms of Use</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/conduct">Code of Conduct</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/disputes">Package Name Disputes</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/privacy">Privacy Policy</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/receiving-reports">Reporting Abuse</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/">Other policies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="txt-c container">
+      <a class="npm-loves-you type-neutral-11" href="https://www.npmjs.com/">
+        npm loves you
+      </a>
+    </div>
+  </footer>
+
+  
+  <script defer="" src="./gulp-util_files/vendor.min.a3c53b90.js"></script>
+  <script defer="" async="" src="./gulp-util_files/3318080746.js"></script>
+  <script defer="" async="" src="./gulp-util_files/elqCfg.min.js"></script><!-- Eloqua -->
+
+
+
+<!-- pid&#x3D;6835 2eddefa8ca5a7daf914029c31477f857bda82d63 https://www.npmjs.com www-14-west.internal.npmjs.com  -->
+<div class="drop-down-menu-overlay" data-drop-down-menu="product-navigation"></div><div class="autocomplete-container" style="position: absolute; display: none; max-height: 400px; z-index: 9999;"><div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 400px; z-index: 9999;"></div></div></body></html>
