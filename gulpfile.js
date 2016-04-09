@@ -54,3 +54,5 @@ gulp.task('jss', function() {
     .pipe(conu('script.js'))
     .pipe(gulp.dest('builds/development/css')); 
 });
+
+gulp.task('default', ['coffee', 'js', 'compass']);
